@@ -28,8 +28,7 @@
 		"build": "tsc",
 		"watch:build": "npm run compile -- --watch",
 		"test": "mocha",
-		"watch:test": "npm run test -- --watch",
-		"prepare": "husky install"
+		"watch:test": "npm run test -- --watch"
 	},
 	"engines": {
 		"node": ">= 14"
