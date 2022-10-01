@@ -214,13 +214,13 @@ export async function getDependencies(
 	dependencies: 'npm' | 'yarn' | 'none' | undefined,
 	packagedDependencies?: string[]
 ): Promise<string[]> {
-	if (dependencies === 'none') {
-		return [cwd];
-	} else if (dependencies === 'yarn' || (dependencies === undefined && (await detectYarn(cwd)))) {
-		return await getYarnDependencies(cwd, packagedDependencies);
-	} else {
-		return await getNpmDependencies(cwd);
-	}
+	// if (dependencies === 'none') {
+	return [cwd];
+	// } else if (dependencies === 'yarn' || (dependencies === undefined && (await detectYarn(cwd)))) {
+	// 	return await getYarnDependencies(cwd, packagedDependencies);
+	// } else {
+	// 	return await getNpmDependencies(cwd);
+	// }
 }
 
 export function getLatestVersion(name: string, cancellationToken?: CancellationToken): Promise<string> {
