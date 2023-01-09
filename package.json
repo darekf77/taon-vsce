@@ -1,6 +1,6 @@
 {
 	"name": "firedev-vsce",
-	"version": "0.0.1",
+	"version": "0.0.2",
 	"description": "VSCode Extension Manager",
 	"repository": {
 		"type": "git",
@@ -21,7 +21,7 @@
 	"main": "out/api.js",
 	"typings": "out/api.d.ts",
 	"bin": {
-		"vsce": "vsce"
+		"firedev-vsce": "firedev-vsce"
 	},
 	"scripts": {
 		"compile": "tsc",
