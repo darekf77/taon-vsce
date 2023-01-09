@@ -62,6 +62,7 @@ async function checkNPM(cancellationToken?: CancellationToken): Promise<void> {
 	}
 }
 
+// @ts-ignore
 function getNpmDependencies(cwd: string): Promise<string[]> {
 	return checkNPM()
 		.then(() =>
@@ -182,6 +183,7 @@ async function getYarnProductionDependencies(cwd: string, packagedDependencies?:
 	return result;
 }
 
+// @ts-ignore
 async function getYarnDependencies(cwd: string, packagedDependencies?: string[]): Promise<string[]> {
 	const result = new Set([cwd]);
 
@@ -210,8 +212,8 @@ export async function detectYarn(cwd: string): Promise<boolean> {
 }
 
 export async function getDependencies(
-	cwd: string,
-	dependencies: 'npm' | 'yarn' | 'none' | undefined,
+	cwd: string, // @ts-ignore
+	dependencies: 'npm' | 'yarn' | 'none' | undefined, // @ts-ignore
 	packagedDependencies?: string[]
 ): Promise<string[]> {
 	// if (dependencies === 'none') {
