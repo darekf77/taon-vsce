@@ -1,6 +1,6 @@
 {
 	"name": "firedev-vsce",
-	"version": "0.0.3",
+	"version": "0.0.4",
 	"description": "VSCode Extension Manager",
 	"repository": {
 		"type": "git",
