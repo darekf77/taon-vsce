@@ -540,9 +540,9 @@ export class ManifestProcessor extends BaseProcessor {
 		if (!this.options.allowMissingRepository && !this.manifest.repository) {
 			util.log.warn(`A 'repository' field is missing from the 'package.json' manifest file.`);
 
-			if (!/^y$/i.test(await util.read('Do you want to continue? [y/N] '))) {
-				throw new Error('Aborted');
-			}
+			// if (!/^y$/i.test(await util.read('Do you want to continue? [y/N] '))) {
+			// 	throw new Error('Aborted');
+			// }
 		}
 
 		if (!this.options.allowStarActivation && this.manifest.activationEvents?.some(e => e === '*')) {
@@ -550,9 +550,9 @@ export class ManifestProcessor extends BaseProcessor {
 				`Using '*' activation is usually a bad idea as it impacts performance.\nMore info: https://code.visualstudio.com/api/references/activation-events#Start-up`
 			);
 
-			if (!/^y$/i.test(await util.read('Do you want to continue? [y/N] '))) {
-				throw new Error('Aborted');
-			}
+			// if (!/^y$/i.test(await util.read('Do you want to continue? [y/N] '))) {
+			// 	throw new Error('Aborted');
+			// }
 		}
 	}
 }
@@ -958,9 +958,9 @@ class LicenseProcessor extends BaseProcessor {
 		if (!this.didFindLicense) {
 			util.log.warn(`${this.expectedLicenseName} not found`);
 
-			if (!/^y$/i.test(await util.read('Do you want to continue? [y/N] '))) {
-				throw new Error('Aborted');
-			}
+			// if (!/^y$/i.test(await util.read('Do you want to continue? [y/N] '))) {
+			// 	throw new Error('Aborted');
+			// }
 		}
 	}
 }
