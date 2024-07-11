@@ -3,7 +3,7 @@
     "resources": []
   },
   "name": "firedev-vsce",
-  "version": "0.0.7",
+  "version": "0.0.8",
   "description": "VSCode Extension Manager",
   "repository": {
     "type": "git",
