@@ -3,7 +3,7 @@
     "resources": []
   },
   "name": "taon-vsce",
-  "version": "0.0.9",
+  "version": "0.0.10",
   "description": "VSCode Extension Manager",
   "repository": {
     "type": "git",
