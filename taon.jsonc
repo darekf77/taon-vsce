@@ -1,4 +1,9 @@
 {
   "version": "v19",
-  "resources": []
+  "resources": [],
+
+  "packageJsonOverride": {
+    "author": "Darek",
+    "description": "Description for vscode-vsce. Hello world!"
+  }
 }
